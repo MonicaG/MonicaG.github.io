@@ -24,7 +24,6 @@ Is there anything missing from my list?  I'm interested in knowing what other de
 * [Full Stack Radio](http://fullstackradio.com) - A podcast "about everything from product design and user experience to unit testing and system administration".
 * [Security Now](http://twit.tv/show/security-now) - Steve Gibson and Leo Laporte discuss security news and topics.
 * [Software Engineering Radio](http://www.se-radio.net/) - A podcast targeting professional software developers.  It has good indepth discussions on a variety of topics.
-* [The Motherboard Podcast](http://www.motherboardpodcast.com) - Conversations with mothers working in technology.
 
 
 ##Twitter
@@ -38,9 +37,8 @@ Is there anything missing from my list?  I'm interested in knowing what other de
 
 
 ##Websites
-	
-* [reSRC](http://resrc.io/list/10/list-of-free-programming-books/) - A list of free programming books.
-* [Skills Matter](https://skillsmatter.com) - Lots and lots of presentations on a variety of topics.
+
+* [Skills Matter](https://skillsmatter.com) - Lots of presentations on a variety of topics.
 * [Virtual Java User Group](http://virtualjug.com) - Forums, bookclub, and webcasts! 
 * Reddit - subreddits
 	* [/r/IOSProgramming](https://www.reddit.com/r/iOSProgramming/)

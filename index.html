@@ -7,8 +7,9 @@ layout: default
 			<h1 class="blog-post-title">{{ post.title }}</h1>
 			<p class="blog-post-meta">{{ post.date | date_to_long_string }}</p>
 				{{ post.excerpt }}
-				<a href="{{ post.url }}">Read More</a>
+				<a href="{{ post.url }}">Read More...</a>
 	</div>
+	
 {% endfor %}
 
 

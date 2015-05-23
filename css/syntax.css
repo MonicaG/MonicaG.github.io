@@ -60,3 +60,23 @@
 .vg { color: #19177C } /* Name.Variable.Global */
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+
+
+ /*Display non-selectable line numbers.  Solution from 
+ https://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html
+ and
+ http://scottbartell.com/adding-line-numbers-to-pygmentsrb
+*/
+.highlight .lineno { color: #aaa; display:inline-block; padding: 0 5px; border-right:1px solid #aaa; 
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;}
+.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+
+
+
+
