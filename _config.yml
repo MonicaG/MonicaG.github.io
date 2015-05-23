@@ -1,0 +1,10 @@
+name: Explaining Code To Myself
+description: Musings on programming.  I am currently focused on ios, java and python.
+highlighter: pygments
+paginate: 5
+disqusShortName: monicag
+twitter_username: mgranbois
+url: "http://MonicaG.github.io"
+permalink: /blog/:categories/:title
+
+
