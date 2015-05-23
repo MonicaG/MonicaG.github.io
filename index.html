@@ -1,26 +1,5 @@
----
-layout: default
----
-
-{% for post in paginator.posts %}
-	<div class="blog-post">
-			<h1 class="blog-post-title">{{ post.title }}</h1>
-			<p class="blog-post-meta">{{ post.date | date_to_long_string }}</p>
-				{{ post.excerpt }}
-				<a href="{{ post.url }}">Read More...</a>
-	</div>
-	
-{% endfor %}
-
-
-<nav>
-	<div class="pagination">
-  		{% if paginator.previous_page %}
-    		<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  		{% endif %}
-		<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  			{% if paginator.next_page %}
-    			<a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  			{% endif %}
-	</div>
-</nav>
+<html>
+<body>
+<p>Hello, World</p>
+</body>
+</html>
