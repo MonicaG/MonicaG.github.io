@@ -2,7 +2,6 @@
 layout: resources
 title: Resources
 desc: Resources I use to keep up to date with technology
-permalink: /resources.html
 ---
 #Resources
 
