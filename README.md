@@ -4,3 +4,4 @@ This blog uses the following:
 * [Bootstrap](http://getbootstrap.com)
 * [Spacelab theme for bootstrap](http://bootswatch.com/spacelab/)
 * [Pygments](http://pygments.org)
+* [Disqus](https://disqus.com/)
