@@ -23,6 +23,8 @@ Is there anything missing from my list?  I'm interested in knowing what other de
 * [Security Now](http://twit.tv/show/security-now) - Steve Gibson and Leo Laporte discuss security news and topics.
 * [Software Engineering Radio](http://www.se-radio.net/) - A podcast targeting professional software developers.  It has good indepth discussions on a variety of topics.
 
+##Slack Channels
+* [Code Newbie](https://codenewbie.slack.com) - A friendly place to ask questions.
 
 ##Twitter
 	
