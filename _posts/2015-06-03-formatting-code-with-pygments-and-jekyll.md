@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting Code With Pygments
+title: Pygments linenos with Jekyll and Bootstrap
 category: webdev
 desc: How to format code snippets using Pygments on a Jekyll Blog using Bootstrap
 ---
@@ -34,7 +34,7 @@ The syntax.css file only provides the css for the syntax highlighting. I also wa
 
 ## Line numbers
 
-I chose to use the table option ( {% raw  %} {% highlight python linenos=table %} {% endraw %}) for displaying line numbers because it allows for easy copying and pasting of the code.  The HTML generated is dependent on whether line numbers are included or not.  The HTML generated for a code snippet using "linenos=table" is the following:
+I chose to use the table option ( {% raw  %} <code>{% highlight python linenos=table %} </code> {% endraw %}) for displaying line numbers because it allows for easy copying and pasting of the code.  The HTML generated is dependent on whether line numbers are included or not.  The HTML generated for a code snippet using "linenos=table" is the following:
 
 {% highlight html linenos=table %}
 <table class="highlighttable">
@@ -63,7 +63,7 @@ This site uses [bootstrap](http://getbootstrap.com/), which requires tables to b
 
 {% highlight javascript %}
 $(document).ready(function () {
-	$( ".highlighttable" ).wrap( "<div class='table-responsive'/>");
+	$( ".highlighttable" ).wrap("<div class='table-responsive'></div>");
 });
 {% endhighlight %}
 
@@ -74,8 +74,9 @@ Next, I needed to style the table and line numbers.  I added the following to my
 .table-responsive { color: #333; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 10px; }
 .linenodiv pre { margin: 6px 0px; color: #aaa; border-radius: 0; border: none; border-right: solid 1px; word-wrap: normal; }
 .linenodiv pre code { white-space: pre; }
-.code .highlight pre { margin: 6px 0px; border-radius: 0; border: none; word-wrap: normal;  }
-.highlighttable { width: 100%; background-color: #F5F5F5; }
+.code .highlight pre { margin: 6px 0px; border-radius: 0; border: none; word-wrap: normal; }
+.highlighttable { width: 100%; background-color: #F5F5F5;  table-layout: fixed; }
+.linenos { width: 40px; }
 {% endhighlight %}
 
 
@@ -87,7 +88,9 @@ Next, I needed to style the table and line numbers.  I added the following to my
 
 * Line 4 - The 'code' class contains the actual code snippet.  Again, I override some of the 'pre' tag settings as defined by bootstrap.
 
-* Line 5 - Sets the table width so it uses the full cell width. I also set background-color to that used by the 'pre' tag.
+* Line 5 - Sets the table width so it uses the full cell width. I also set background-color to that used by the 'pre' tag.  The table-layout is set to fixed because there was an issue with being able to scroll properly on touch screens.  It seems the combination of a 'pre' tag within a 'td' tag made scrolling difficult (at least on iOS).  Changing the table-layout to fixed solved that issue.
+
+* Line 6 - Since the table-layout is fixed, I needed to set the width of the linenos.  I set it to 40px which, I think, styles nicely for line numbers under 4 digits in length.  
 
 Here is an example of a code snippet using line numbers:
 
@@ -175,7 +178,7 @@ You can see my full syntax.css and blog.js files on github:
 
 ## Alternatives
 
-I investigated using line numbers without the table option ( {% raw  %} {% highlight python linenos %} {% endraw %}) and using the [css user-select feature](http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting) to prevent the line numbers from being selected when copying and pasting.  However, these features are [not standard](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select) and I found they did not work as expected across browsers.  So, I opted for the table option instead.
+I investigated using line numbers without the table option ( {% raw  %} <code>{% highlight python linenos %} </code>{% endraw %}) and using the [css user-select feature](http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting) to prevent the line numbers from being selected when copying and pasting.  However, these features are [not standard](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select) and I found they did not work as expected across browsers.  So, I opted for the table option instead.
 
 
 

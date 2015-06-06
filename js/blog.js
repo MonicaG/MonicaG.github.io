@@ -10,7 +10,7 @@ $(document).ready(function () {
     //used for the pygments code highlighting.  The line numbers use a table.
     //To make it responsive, the table needs to be wrapped in the 
     //the table-responsive tag as per bootstrap documentation.
-    $( ".highlighttable" ).wrap( "<div class='table-responsive'/>");
+    $( ".highlighttable" ).wrap( "<div class='table-responsive'></div>");
 });
 
 
