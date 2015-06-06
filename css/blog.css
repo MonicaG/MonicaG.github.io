@@ -60,5 +60,26 @@ h6,
   font-size: 12px;
 }
 
+.navbar {
+    border-radius: 0px;
+}
 
+.blog-link a:link {
+    text-decoration: none;
+    color: inherit;
+}
 
+.blog-link a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-link a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-link a:active {
+    text-decoration: none;
+    color: inherit;
+}
