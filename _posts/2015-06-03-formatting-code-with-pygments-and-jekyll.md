@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pygments linenos with Jekyll and Bootstrap
+title: Formatting Pygments linenos with Jekyll and Bootstrap
 category: webdev
 desc: How to format code snippets using Pygments on a Jekyll Blog using Bootstrap
 ---
