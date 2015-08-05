@@ -7,7 +7,7 @@ desc: Why you should use Integer.compare rather than subtracting to integers whe
 
 TL;DR: Use Integer.compare to avoid overflow that can occur when subtracting two integers.
 
-I took the [Oracle's Java 8 MOOC: Lamdbas And Streams](https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143) class.  I had a question about using Integer.compare that arose from one of the homework questions.  I am recording the question and answer here so I can find it easily in the future, instead of having it buried in a thread about a homework assignment using the Streams API.  The original post is on the [Oracle community forums](https://community.oracle.com/message/13227819#13227819).
+I took [Oracle's Java 8 MOOC: Lamdbas And Streams](https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143) class.  I had a question about using Integer.compare that arose from one of the homework questions.  I am recording the question and answer here so I can find it easily in the future, instead of having it buried in a thread about a homework assignment using the Streams API.  The original post is on the [Oracle community forums](https://community.oracle.com/message/13227819#13227819).
 
 My question was:
 
