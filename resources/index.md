@@ -28,7 +28,7 @@ Is there anything missing from my list?  I'm interested in knowing what other de
 
 ##Twitter
 	
-* I use a [twitter list](https://twitter.com/mgranbois/lists/software-development) to follow industry related news.
+* [Twitter](https://twitter.com/) - I follow various people and organizations.
 
 
 ##TV
