@@ -4,11 +4,14 @@ title: About
 ---
 #About
 
-The purpose of this blog is to help me clarify my thoughts and code.  The process of explaining a concept helps me achieve a better understanding of it.
+I programmed professionally for 10+ years, but am currently running around after my little ones.  I still like programming though, so in my copious spare time (ha!) I work on my own hobby projects and contribute to OSS projects.  
 
-I am currently interested in Java 8 and Swift. 
+My background is in enterprise Java development.  I am using this time to expand beyond Java and play around with other languages and technologies.  This blog is part of that learning process.  
 
-The source of this blog is available on [GitHub](https://github.com/MonicaG/MonicaG.github.io).
+
+
+
+
 
 
 
