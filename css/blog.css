@@ -17,11 +17,11 @@
 }
 
 .footer-content {
-	text-align: center;
 	font-size: 0.75em;
 	border-top: 1px solid #ddd;
 	padding-top: 1em;
-
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .shareLinks {
@@ -88,3 +88,11 @@ blockquote {
     text-decoration: none;
     color: inherit;
 }
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+

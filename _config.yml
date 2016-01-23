@@ -4,6 +4,7 @@ highlighter: pygments
 paginate: 5
 disqusShortName: monicag
 twitter_username: mgranbois
+github_username: MonicaG
 url: "http://monicagranbois.com"
 permalink: /blog/:categories/:title
 google_site_verification: ExTc2XTxRePfj38VQ7oJrNENFUTs7xQhS-1j1UlRKW4

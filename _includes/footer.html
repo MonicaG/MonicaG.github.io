@@ -1,8 +1,11 @@
     <div class="container">
-      <footer class="footer-content">
-        <p>Monica Granbois - <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a></p>
-        <p><a href="https://github.com/MonicaG/MonicaG.github.io">Blog Source</a></p>
-      </footer>
+      <div class="row">
+        <footer class="footer-content">
+            <a href="https://github.com/{{ site.github_username }}"><span class="icon">{% include icon-github.svg %}</span> <span>{{ site.github_username }}</span></a>
+            &nbsp;|&nbsp;
+            <a href="https://twitter.com/{{ site.twitter_username }}"><span class="icon">{% include icon-twitter.svg %}</span> <span>{{ site.twitter_username }}</span></a>
+        </footer>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
