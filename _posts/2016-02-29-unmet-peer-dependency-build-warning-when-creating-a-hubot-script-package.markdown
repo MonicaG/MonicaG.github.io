@@ -5,7 +5,8 @@ category: bots
 desc: Solving UNMET PEER DEPENDENCY warnings when doing npm installs
 ---
 
-I created a [script package for hubot](https://hubot.github.com/docs/scripting/#creating-a-script-package) and followed the [developer guide for publishing a package](https://docs.npmjs.com/misc/developers#before-publishing-make-sure-your-package-installs-and-works).  I received an unmet peer dependency build warning when I did the install.  This post describes what I did to resolve the warning.
+I created a [script package for hubot](https://hubot.github.com/docs/scripting/#creating-a-script-package) and followed the [developer guide for publishing a package](https://docs.npmjs.com/misc/developers#before-publishing-make-sure-your-package-installs-and-works).  I received an unmet peer dependency build warning when I did the install.  This post describes what that is.
+
 
 The [docs](https://docs.npmjs.com/misc/developers#before-publishing-make-sure-your-package-installs-and-works) state:
 
@@ -23,15 +24,18 @@ Which gave me the following warning message:
 npm WARN hubot-lmgtfy@0.1.0 requires a peer of hubot@2.x but none was installed.
 {% endhighlight %}
 
-I solved this by using the following:
+**Why did this happen?**
+
+I am using npm version 3.7.5. As of version 3, npm will no longer install a peer dependency for you. In this case no action is needed and the warning can be ignore.  This is because the package is a plugin to hubot which already has the dependency listed in its package.json file.  Building and running hubot worked as expected with no warning or error messages.
+
+However, if you do want to install the hubot peer dependency you can do so with the following:
 
 {% highlight bash %}
 npm install -g hubot .
 {% endhighlight %}
 
+Note: when doing a peer dependency install you will need to install the packages as a one liner, with the dependency listed first.  Installing them separately will not work.
 
-Why did this happen?
-I am using npm version 3.7.5. As of version 3, npm will no longer install a peer dependency for you.  If the peer dependecy does not exist on your machine, then you must install it.  So, intalling hubot, which my package has a peer dependency on, fixed the issue.  When doing a peer dependency install you will also need to do the install of the packages as a one liner, rather than installing them seperately.  
 
 For reference see:
 
