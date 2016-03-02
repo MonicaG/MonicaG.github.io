@@ -1,6 +1,6 @@
 name: Monica Granbois
 description: Explaining code to myself. 
-highlighter: pygments
+highlighter: rouge
 paginate: 5
 disqusShortName: monicag
 twitter_username: mgranbois
@@ -13,6 +13,8 @@ navbar_brand: Explaining Code To Myself
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+
 
 
 
