@@ -173,7 +173,7 @@ public class Pojo {
 
 You can see my full syntax.css and blog.js files on github:
 
-* [syntax.css](https://github.com/MonicaG/MonicaG.github.io/blob/master/css/syntax.css) 
+* [syntax.css](https://github.com/MonicaG/MonicaG.github.io/blob/fd05bac4e918da0d836a531c11110386c18f50f2/css/syntax.css) 
 * [blog.js](https://github.com/MonicaG/MonicaG.github.io/blob/master/js/blog.js)
 
 ## Alternatives
