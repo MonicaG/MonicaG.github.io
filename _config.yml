@@ -10,6 +10,10 @@ permalink: /blog/:categories/:title/
 google_site_verification: ExTc2XTxRePfj38VQ7oJrNENFUTs7xQhS-1j1UlRKW4
 bing_site_verification: DB6D94A115932508D6CD48BDADFE0AB1
 navbar_brand: Explaining Code To Myself
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 gems:
   - jekyll-sitemap
