@@ -36,7 +36,7 @@ I did the following to format code blocks:
 {% highlight css %}
 .highlight .lineno { border: none; border-radius: 0; border-right: solid 1px; color: #aaa; }
 .highlight .code pre { border: none; white-space: pre; overflow-x: auto; word-wrap: normal; }
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+.highlight code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
 {% endhighlight %}
 
 The good news is, this code is much simpler than what I used for formatting the code snippets with [Jekyll](http://jekyllrb.com) version 2 and [Bootstrap](http://getbootstrap.com/)! Unfortunately, it is not yet available with [Github Pages](https://pages.github.com/).  Hopefully, it will be soon!
