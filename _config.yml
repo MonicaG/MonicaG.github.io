@@ -1,4 +1,5 @@
 name: Monica Granbois
+author: Monica Granbois
 description: Explaining code to myself. 
 highlighter: rouge
 paginate: 5
@@ -9,7 +10,7 @@ url: "http://monicagranbois.com"
 permalink: /blog/:categories/:title/
 google_site_verification: ExTc2XTxRePfj38VQ7oJrNENFUTs7xQhS-1j1UlRKW4
 bing_site_verification: DB6D94A115932508D6CD48BDADFE0AB1
-navbar_brand: Explaining Code To Myself
+navbar_brand: Monica Granbois
 markdown: kramdown
 kramdown:
   input: GFM
@@ -18,8 +19,4 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
-
-
-
-
-
+  - jekyll-feed

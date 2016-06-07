@@ -8,6 +8,7 @@
     <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
     <meta name="msvalidate.01" content="{{ site.bing_site_verification }}" />
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" /> <!-- Honour Terry Pratchett http://www.gnuterrypratchett.com/#HTML -->
+    {% feed_meta %}
     {% if page.title %} 
       <title>{{ page.title }}</title>
     {% else %}
@@ -51,7 +52,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
               <li><a href="/about/">About</a></li>
-              <li><a href="/resources/">Resources</a></li>
+              <li><a href="/feed.xml">RSS</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
