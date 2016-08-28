@@ -4,9 +4,11 @@ title: About
 ---
 # About
 
-I programmed professionally for 10+ years, but am currently running around after my little ones.  I still like programming though, so in my copious spare time (ha!) I work on my own hobby projects and contribute to OSS projects.  
+<div class="about-contact"> {% include contact.html %}</div>
 
-My background is in enterprise Java development.  I am using this time off to expand beyond Java and play around with other languages and technologies.  This blog is part of that learning process.  
+I programmed professionally for 10+ years.  My background is in enterprise Java development. I worked on systems that included e-commerce, finance and inventory management.
+
+I currently run around after my little ones. I still like to program though. So, in my copious spare time (ha!) I work on my own hobby projects and contribute to OSS projects. I am using this time to expand beyond Java and play with other languages and technologies. This blog is part of that learning process.
 
 Somethings that I like or use are:
 
@@ -37,7 +39,7 @@ Somethings that I like or use are:
 	* [Sublime Text](https://www.sublimetext.com/) - Very slick and has many plugins.
 	* [vim](https://github.com/vim/vim) - I am by no means a master, but can usually fumble my way through.  I do not partake in the great war between vim and emacs users. Vim works for me for the limited things I do.
 - **Time tracking**
-	* [Harvest](https://www.getharvest.com/) - I've started time tracking my personal projects.  This seems to do the trick.  The free account allows for 2 open projects at a time, which is sufficient for me.  The timer on the Mac menu bar makes it handy to start and stop.
+	* [Harvest](https://www.getharvest.com/) - I've started time tracking my personal projects.  This app seems to do the trick.  The free account allows for 2 open projects at a time, which is sufficient for me.  The timer on the Mac menu bar makes it handy to start and stop.
 
 
 
