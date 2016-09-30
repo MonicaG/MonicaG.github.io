@@ -3,6 +3,7 @@ title: Error&#58; package architecture (arm) does not match system (armhf)
 layout: post
 category: raspberrypi
 desc: What does arm and armhf mean?  And what does the error "package architecture (arm) does not match system (armhf)" mean?
+excerpt_separator: <!--more-->
 ---
 
 I installed a beta version of a Debian package on my [Raspberry Pi 3](https://www.raspberrypi.org/magpi/raspberry-pi-3-specs-benchmarks/) and received the following error:
@@ -32,6 +33,8 @@ I did so and the package installed and worked as expected.  However, this made m
 - What were the consequences of running that command?
 
 After several hours of reading, experimenting and writing this blog post, I _think_ I know.  I'll start by breaking the command down.
+
+<!--more-->
 
 <div class="alert alert-info">
   <strong>Note:</strong> The above solution was a work around while the package was in development. The production version is compiled for the armhf architecture.
