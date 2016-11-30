@@ -2,7 +2,7 @@
 title: On deleting code
 layout: post
 category: programming
-desc: When and why to delete code
+desc: My journey creating debugging and deleting a unit test.
 excerpt_separator: <!--more-->
 ---
 
