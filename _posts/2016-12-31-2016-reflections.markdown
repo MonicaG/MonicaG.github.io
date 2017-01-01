@@ -1,0 +1,48 @@
+---
+title: 2016 Reflections
+layout: post
+category: other
+desc: What I learned in 2016
+excerpt_separator: <!--more-->
+---
+
+What I did in 2016:
+
+* Created [BCDevExBot](https://twitter.com/bcdevexbot) twitter bot
+* Contributed to [mozilla web qa bot](https://github.com/mozilla/webqabot)
+* Helped my Dad with his wordpress website ([http://cowichanbowmen.com/](http://cowichanbowmen.com/))
+* Volunteered at a [Ladies Learning Code](http://ladieslearningcode.com/) Wordpress workshop
+* Played around with [Hubot](https://hubot.github.com/) and made two small plugins:
+	* [hubot-credit-card-number-generator](https://www.npmjs.com/package/hubot-credit-card-number-generator)
+	* [hubot-lmgtfy](https://www.npmjs.com/package/hubot-lmgtfy)
+* Worked on problems on [hackerrank](https://www.hackerrank.com/)
+	* Competed in the [Ad Infinitum 16 (First timers)](https://www.hackerrank.com/contests/infinitum16-firsttimer/challenges) competition
+	* Completed the [30 days of code](https://www.hackerrank.com/domains/tutorials/30-days-of-code) challenge
+* Wrote a blog entry each month
+
+
+Postitives:
+
+* I coded!
+* My python knowledge has improved.
+* I contributed a small amount to open source.
+* My command line skills have improved.
+
+Negatives:
+
+* I did not have a focus.  I split my time among coffee script (hubot), wordpress and python.
+* The time spent on hacker rank distracted me from doing another project.  
+* Nothing gets done in December.  It is all illness and family functions.
+
+What I can do to improve in 2017:
+
+* Focus on projects. Come up with a plan on what I want to work on and stick to it.
+* Pick a language to focus on. 
+
+
+Happy New Year!
+
+<!--more-->
+
+
+
