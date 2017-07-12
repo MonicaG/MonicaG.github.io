@@ -8,7 +8,7 @@ I've been playing around with Swift and going through Apple's [Language Guide fo
 
 All of these questions can be done using a XCode Playground.  My answers are below the list of questions.  
 
-##Questions
+## Questions
 
 1. Declare a variable named 'x' and set it to 3
 
@@ -42,7 +42,7 @@ All of these questions can be done using a XCode Playground.  My answers are bel
 
 	
 
-##Answers
+## Answers
 
 1.
 We don't need to declare a type as it is inferred from the value (In this case an Int)
