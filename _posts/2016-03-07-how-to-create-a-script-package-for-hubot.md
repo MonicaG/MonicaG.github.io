@@ -49,6 +49,10 @@ The package.json changes should include something like the following:
 
 ### Step 3: Test your npm package locally
 
+{:.alert .alert-danger}
+  <strong>UPDATE Dec 2017:</strong> The steps below do NOT work for npm 5. Instead, use the `npm install` or `npm link` commands as described in [this stackoverflow question](https://stackoverflow.com/questions/8088795/installing-a-local-module-using-npm/18778516). For more details see:  [http://codetunnel.io/npm-5-changes-to-npm-link/](http://codetunnel.io/npm-5-changes-to-npm-link/)
+
+
 Once you have created your script, you will want to test your package locally.  To do so, you will need to make your package available using the [npm link](https://docs.npmjs.com/cli/link) command. In the root of your package do the following commands:
 
 ```Shell
