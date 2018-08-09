@@ -1,7 +1,7 @@
 ---
 title: Problem Solving Checklist
 layout: post
-description: My notes on learning Swift. This post covers optionals.
+description: A checklist to myself on how to approach problems.
 category: programming
 ---
 
