@@ -1,5 +1,5 @@
 ---
-title: How I replaced a nested for loop using flatMap
+title: How I replaced a nested for loop with flatMap
 layout: post
 category: swift
 desc: How I transformed an array of arrays using flatMap instead of nested for loops.
