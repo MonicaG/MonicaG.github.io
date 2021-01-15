@@ -48,7 +48,7 @@ After several hours of reading, experimenting and writing this blog post, I _thi
 - <code>dpkg --print-foreign-architectures</code> will list any architectures that have been added to <code>dpkg</code>.  Foreign architectures can be added and removed. 
 - <code>dpkg -I package_name.deb</code> will display information about a .deb archive. The architecture of a package will be listed in the 'Architecture' field.
 
-<img src="/images/dpkg.png" class="img-responsive center-block" alt="output of various dpkg commands">
+<img src="/images/dpkg.png" class="img-fluid mx-auto d-block" alt="output of various dpkg commands">
 
 In the above screenshot the <code>dpkg --print-foreign-architectures</code> command returns nothing because a foreign architecture has not yet been added.
 
@@ -59,11 +59,11 @@ Architecture in this scenario refers to an [Application Binary Interface](#appli
 - <code>dpkg --add-architecture arch_name</code> - adds the given architecture to the list of architectures <code>dpkg</code> will process.  After running this command do an <code>apt-get update</code> to update the available package lists. If you get errors see the [errors section](#errors-from-adding-the-new-architecture) below. Note: running the <code>add-architecture</code> command does not alter the computer's architecture. It only tells the <code>dpkg</code> tool which architectures it will process.
 
 
-<img src="/images/dpkg-add-architecture.png" class="img-responsive center-block" alt="output of add architecture">
+<img src="/images/dpkg-add-architecture.png" class="img-fluid mx-auto d-block" alt="output of add architecture">
 
 - <code>dpkg --force architecture -i package_name.deb</code> - installs a Debian package with no architecture or an architecture that does not match the machine's architecture.  The foreign architecture is not added to the list of architectures that <code>dpkg</code> maintains.
 
-<img src="/images/dpkg-force-architecture.png" class="img-responsive center-block" alt="output of force architecture">
+<img src="/images/dpkg-force-architecture.png" class="img-fluid mx-auto d-block" alt="output of force architecture">
 
 
 ## Application Binary Interface
@@ -94,11 +94,11 @@ dpkg: error: cannot remove architecture 'arm' currently in use by the database
 
 The screenshot below shows the errors and results from removing the <code>arm</code> architecture:
 
-<img src="/images/dpkg-remove-architecture1.png" class="img-responsive center-block" alt="output from remove architecture when packages of that architecture are present">
+<img src="/images/dpkg-remove-architecture1.png" class="img-fluid mx-auto d-block" alt="output from remove architecture when packages of that architecture are present">
 
 After choosing 'Y' at the prompt, the package is removed. Now the<code>arm</code> architecture can be removed successfully:
 
-<img src="/images/dpkg-remove-architecture2.png" class="img-responsive center-block" alt="output from successfully running remove architecture command">
+<img src="/images/dpkg-remove-architecture2.png" class="img-fluid mx-auto d-block" alt="output from successfully running remove architecture command">
 
 ## Errors from adding the new architecture
 
@@ -137,7 +137,7 @@ deb [arch=armhf] http://mirrordirector.raspbian.org/raspbian/ jessie main contri
 In the following screenshot the first file in the <code>diff</code> command contains the modification I made and the second file is the original file.
 
 
-<img src="/images/changes-to-apt-sources.png" class="img-responsive center-block" alt="output from diff command on the changed and original sources files">
+<img src="/images/changes-to-apt-sources.png" class="img-fluid mx-auto d-block" alt="output from diff command on the changed and original sources files">
 
 I discovered one side effect from adding a new architecture, but are there any more? One possibility is the package may not work if it depends on specific architecture attributes. In my case the package worked, but others may not.
 

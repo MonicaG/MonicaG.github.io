@@ -26,11 +26,11 @@ In an XCode project:
 * Choose Image Set. This will create an empty Image Set. 
 
 
-<img src="/images/autoscalingPDFImage/createImageSet.png" class="img-responsive center-block" alt="Image showing Assets.xcassets pop-up menu">
+<img src="/images/autoscalingPDFImage/createImageSet.png" class="img-fluid mx-auto d-block" alt="Image showing Assets.xcassets pop-up menu">
 
 
 The next step is to change some settings in the Attribute Inspector. If the Inspectors editor is not displayed, open it using the button in the top right corner of XCode.
-<img src="/images/autoscalingPDFImage/inspectorToggle.png" class="img-responsive center-block" alt="Image showing the inspector toggle.">
+<img src="/images/autoscalingPDFImage/inspectorToggle.png" class="img-fluid mx-auto d-block" alt="Image showing the inspector toggle.">
 
 
 Next, mark the image for use on an Apple Watch. In the 'Devices' section of the Attribute Inspector:
@@ -38,24 +38,24 @@ Next, mark the image for use on an Apple Watch. In the 'Devices' section of the 
 * check the 'Apple Watch' option
 * This will result in one 2x square for the Apple Watch.  
 
-<img src="/images/autoscalingPDFImage/appleWatchImageSet.png" class="img-responsive center-block" alt="Image showing the settings for an Apple Watch Image Set">
+<img src="/images/autoscalingPDFImage/appleWatchImageSet.png" class="img-fluid mx-auto d-block" alt="Image showing the settings for an Apple Watch Image Set">
 
 Now add the pdf image to XCode. I'm using this [happy face image](/images/autoscalingPDFImage/happy.pdf).
 
 * Drag and drop the image onto the 2x Apple Watch Square.
 * Give the Image Set a name in the Attribute Inspector. I chose 'Happy'.
 
-<img src="/images/autoscalingPDFImage/happyImageAdded2.png" class="img-responsive center-block" alt="Image showing the happy face pdf image added to Image Set">
+<img src="/images/autoscalingPDFImage/happyImageAdded2.png" class="img-fluid mx-auto d-block" alt="Image showing the happy face pdf image added to Image Set">
 
 
 Next set the scaling options in the Attribute Inspector:
 * Set the 'Scales' option to 'Single Scale'
 
-<img src="/images/autoscalingPDFImage/singleScale.png" class="img-responsive center-block" alt="Image showing the scaling options">
+<img src="/images/autoscalingPDFImage/singleScale.png" class="img-fluid mx-auto d-block" alt="Image showing the scaling options">
 
 * Further down the menu, in the 'Apple Watch' section, change 'Auto Scaling' to 'Automatic'
 
-<img src="/images/autoscalingPDFImage/autoScale.png" class="img-responsive center-block" width="524" height="160" alt="Image showing the Apple Watch options">
+<img src="/images/autoscalingPDFImage/autoScale.png" class="img-fluid mx-auto d-block" width="524" height="160" alt="Image showing the Apple Watch options">
 
 Now, the image will scale based on the Apple Watch's screen size!
 
@@ -92,7 +92,7 @@ struct ContentView_Previews: PreviewProvider {
 
 ```
 
-<img src="/images/autoscalingPDFImage/scaledImages2.png" class="img-responsive center-block" alt="Image showing the scaled Happy Face Image in the Preview Canvas on a 44mm and a 38mm screens.">
+<img src="/images/autoscalingPDFImage/scaledImages2.png" class="img-fluid mx-auto d-block" alt="Image showing the scaled Happy Face Image in the Preview Canvas on a 44mm and a 38mm screens.">
 
 
 
