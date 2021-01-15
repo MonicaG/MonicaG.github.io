@@ -1,16 +1,14 @@
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 related-posts">
-			{% assign firstTime = true %}
-			{% for post in site.posts %}
-				{% if post.title != page.title and post.categories[0] == page.categories[0] %}
-					{% if firstTime == true %}
-						<p><strong>Other {{ post.categories[0] }} posts:</strong></p>
-					{% endif %}
-					{% assign firstTime = false %}
-					<p><a href="{{ post.url }}">{{ post.title }}</a></p>
-				{% endif %}
-			{% endfor %}
-		</div>
-	</div>
+<div class="related-posts">
+	{% assign firstTime = true %}
+	<ul>
+	{% for post in site.posts %}
+		{% if post.title != page.title and post.categories[0] == page.categories[0] %}
+			{% if firstTime == true %}
+				<p class="text-center text-md-left font-weight-bold">Other {{ post.categories[0] | capitalize }} Posts</p>
+			{% endif %}
+			{% assign firstTime = false %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
 </div>

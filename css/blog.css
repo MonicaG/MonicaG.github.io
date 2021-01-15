@@ -2,32 +2,36 @@
  * Blog posts
  */
 
+:root {
+  --separator-color: #dddddd;
+}
+
 .blog-post {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .blog-post-title {
   margin-bottom: 5px;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
 }
-.seperator {
-  border-top: 1px solid #ddd;
+.separator {
+  border-top: 1px solid var(--separator-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-content {
 	font-size: 0.75em;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid var(--separator-color);
 	padding-top: 1em;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
 }
 
-.shareLinks {
-  text-align: left;
-  margin-bottom: 30px;
+.share-links {
+  margin-bottom: 20px;
 }
 
 .code-404 {
@@ -36,39 +40,41 @@
   margin: 30px;
 }
 
+nav {
+  margin-bottom: 20px; 
+}
+
 h1,
 .h1 {
-  font-size: 28px;
+ font-size:2.25rem
 }
 h2,
 .h2 {
-  font-size: 24px;
+ font-size:1.75rem
 }
 h3,
 .h3 {
-  font-size: 20px;
+ font-size:1.50rem
 }
 h4,
 .h4 {
-  font-size: 16px;
+ font-size:1.25rem
 }
 h5,
 .h5 {
-  font-size: 14px;
+ font-size:1.10rem
 }
 h6,
 .h6 {
-  font-size: 12px;
+ font-size:1rem
 }
 
 blockquote {
   font-size: inherit;
-  border-left: 5px solid #D1D7DD;
+  border-left: 5px solid gray;
+  padding-left: 10px;
 }
 
-.navbar {
-    border-radius: 0px;
-}
 
 .blog-link a:link {
     text-decoration: none;
@@ -91,10 +97,8 @@ blockquote {
 }
 
 .icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
+ font-size: 1.25rem;
+ color: gray;
 }
 
 .related-posts {
@@ -104,4 +108,12 @@ blockquote {
 .comments {
   margin-top: 30px;
 }
+
+.next {
+  margin-left: 5px;
+}
+.previous {
+  margin-right: 5px;
+}
+
 

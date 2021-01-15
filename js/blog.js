@@ -1,15 +1,5 @@
-
-$(document).ready(function () {
-    //highlights the selected menu link
-    var url = window.location;
-    $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
-    $('ul.nav a').filter(function() {
-         return this.href == url;
-    }).parent().addClass('active');
+//highlights the selected navigation bar link
+$(document).ready(function() {
+  $('a.active').removeClass('active');
+  $('a[href="' + location.pathname + '"]').closest('a').addClass('active'); 
 });
-
-
-   
-
-   
-
