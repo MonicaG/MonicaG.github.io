@@ -12,7 +12,11 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-
+comments:
+  repo: MonicaG/MonicaG.github.io
+  label: blog comment
+  theme: github-light
+  issue-term: pathname
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
