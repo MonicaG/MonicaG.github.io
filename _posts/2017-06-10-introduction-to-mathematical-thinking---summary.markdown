@@ -94,7 +94,7 @@ This process reminded me of recursion because of the base case and the domino ef
 
 For example, the following is a recursive program that calculates factorials.
 
-```Python
+```python
 def factorial(n):
     if n == 0:
         return 1
@@ -145,7 +145,7 @@ So, $$ k + 1 \ge 16 $$, and $$ (k + 1) - 4 \ge 12 $$.  The inductive hypothesis 
 
 An example algorithm of this:
 
-```Python
+```python
 def postage(n):
     if n == 12:
         print("4 + 4 + 4")

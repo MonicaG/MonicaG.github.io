@@ -9,10 +9,10 @@ Comparing two files is a common task.  On my MacBook I use the FileMerge (opendi
 
 To start, here are two simple python files that I will compare:
 
-<img src="/images/file_diff_file1.png" class="img-responsive center-block" alt="contents of file1.py">
+<img src="/images/file_diff_file1.png" class="img-fluid mx-auto d-block" alt="contents of file1.py">
 
 
-<img src="/images/file_diff_file2.png" class="img-responsive center-block" alt="contents of file2.py">
+<img src="/images/file_diff_file2.png" class="img-fluid mx-auto d-block" alt="contents of file2.py">
 
 The differences between the two file are:
 
@@ -30,7 +30,7 @@ The <code>diff</code> command compares files line by line.  It is invoked as fol
 diff file1.py file2.py
 ```
 
-<img src="/images/file_diff_diff_command.png" class="img-responsive center-block" alt="output of diff file1.py file2.py command">
+<img src="/images/file_diff_diff_command.png" class="img-fluid mx-auto d-block" alt="output of diff file1.py file2.py command">
 
 Let's break down the output:
 
@@ -59,7 +59,7 @@ The <code>colordiff</code> command is invoked as follows:
 colordiff file1.py file2.py
 ```
 
-<img src="/images/file_diff_colordiff.png" class="img-responsive center-block" alt="output of colordiff file1.py file2.py command">
+<img src="/images/file_diff_colordiff.png" class="img-fluid mx-auto d-block" alt="output of colordiff file1.py file2.py command">
 
 The colour scheme used for highlighting can be changed. The file is located in <code>/etc/colordiffrc</code> but override it in <code>~/.colordiffrc</code>. Alternate colour themes are available at [https://github.com/daveewart/colordiff](https://github.com/daveewart/colordiff)
 
@@ -72,7 +72,7 @@ The <code>cmp</code> command compares two files byte by byte.  If the files are 
 cmp file1.py file2.py
 ```
 
-<img src="/images/file_diff_cmp.png" class="img-responsive center-block" alt="output of cmp file1.py file2.py command">
+<img src="/images/file_diff_cmp.png" class="img-fluid mx-auto d-block" alt="output of cmp file1.py file2.py command">
 
 
 It will also report if one file is the prefix of another. What does it mean that one file is a prefix of another? It means the contents of one file are the starting contents of another file.  For example:
@@ -99,14 +99,14 @@ In this example a.txt is a prefix of b.txt.
 cmp a.txt b.txt
 ```
 
-<img src="/images/file_diff_cmp-prefix.png" class="img-responsive center-block" alt="output of cmp a.txt b.txt command">
+<img src="/images/file_diff_cmp-prefix.png" class="img-fluid mx-auto d-block" alt="output of cmp a.txt b.txt command">
 
 
 ### sdiff 
 
 The <code>sdiff</code> command does a side by side merge of file difference.  When <code>sdiff</code> is invoked without the --output (-o) option it produces a side-by-side difference.  However, this usage is considered depricated.  <code>diff -y file1 file2</code> should be used instead.  This screen shot shows the output from using <code>diff -y file1 file2</code>.
 
-<img src="/images/file_diff_diff-y.png" class="img-responsive center-block" alt="output of diff -y file1.py file2.py command">
+<img src="/images/file_diff_diff-y.png" class="img-fluid mx-auto d-block" alt="output of diff -y file1.py file2.py command">
 
 
 ## Editors
@@ -126,7 +126,7 @@ Emacs will then provide prompts to enter the file names. At the resulting differ
 * <code>p</code> or <code>DEL</code> - move to the previous difference
 * <code>n</code> or <code>SPACE</code> - move to the next difference
 
-<img src="/images/file_diff_emacs-ediff.png" class="img-responsive center-block" alt="output of using emacs M-x ediff-files command">
+<img src="/images/file_diff_emacs-ediff.png" class="img-fluid mx-auto d-block" alt="output of using emacs M-x ediff-files command">
 
 
 ### vimdiff
@@ -137,7 +137,7 @@ The vim editor lets you compare files too.  Use the following command to view th
 vimdiff file1.py file2.py
 ```
 
-<img src="/images/file_diff_vimdiff.png" class="img-responsive center-block" alt="output of vimdiff file1.py file2.py command">
+<img src="/images/file_diff_vimdiff.png" class="img-fluid mx-auto d-block" alt="output of vimdiff file1.py file2.py command">
 
 
 To view the differences using horizontal splits use the -o argument:

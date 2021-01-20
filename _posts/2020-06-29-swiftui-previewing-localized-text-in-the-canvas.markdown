@@ -36,4 +36,4 @@ The above code assumes that a French `Localizable.strings` file exist with a `gr
 
 The [EnvironmentValues](https://developer.apple.com/documentation/swiftui/environmentvalues) documentation lists all the values that can be set.  
 
-<img src="/images/localization.gif" class="img-responsive center-block" alt="Gif showing the Canvas preview switching greeting text between english, french and german.">
+<img src="/images/localization.gif" class="img-fluid mx-auto d-block" alt="Gif showing the Canvas preview switching greeting text between english, french and german.">

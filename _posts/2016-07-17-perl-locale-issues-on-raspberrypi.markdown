@@ -29,7 +29,7 @@ sudo vi /etc/locale.gen
 
 Uncommenting means removing the # mark at the start of a line. Any line that starts with a # is ignored, so removing the mark means the line will be read. Here I have uncommented the en_GB.UTF-8 and en_US.UTF-8 locales:
 
-<img src="/images/locale_warning_locale_gen_file.png" class="img-responsive center-block" alt="editing the /etc/locale.gen file">
+<img src="/images/locale_warning_locale_gen_file.png" class="img-fluid mx-auto d-block" alt="editing the /etc/locale.gen file">
 
 
 Next I ran the following two commands:
@@ -42,9 +42,9 @@ sudo locale-gen
 
 This solved my issue and now Perl does not throw the warning! The output of the two commands are displayed in the screenshots below.  
 
-<img src="/images/locale_warning_dpgk-reconfigure.png" class="img-responsive center-block" alt="results of dpkg-reconfigure locales command">
+<img src="/images/locale_warning_dpgk-reconfigure.png" class="img-fluid mx-auto d-block" alt="results of dpkg-reconfigure locales command">
 
-<img src="/images/locale_warning_locale-gen.png" class="img-responsive center-block" alt="results of locale-gen command">
+<img src="/images/locale_warning_locale-gen.png" class="img-fluid mx-auto d-block" alt="results of locale-gen command">
 
 
 I was curious about the <code>dpkg-reconfigure locales</code> and <code>locale-gen</code> commands.  The following is my summary from reading the man pages for those commands.
