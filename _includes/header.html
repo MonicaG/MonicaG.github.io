@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" /> <!-- Honour Terry Pratchett http://www.gnuterrypratchett.com/#HTML -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@mgranbois">
-    {% if page.title %} 
-      <meta name="twitter:title" content="{{ page.title }}" />
-      <meta property="og:title" content="{{ page.title }}"/>
-    {% else %}
-      <meta name="twitter:title" content="{{ site.name }}"/>
-      <meta property="og:title" content="{{ site.name }}"/>
-    {% endif %}
-    {% if page.desc %}
-     <meta name="twitter:description" content="{{ page.desc }}" />
-     <meta property="og:description" content="{{ page.desc }}"/>
-    {% else %}
-     <meta name="twitter:description" content="{{ site.description }}" />
-     <meta property="og:description" content="{{ site.description }}"/>
-    {% endif %}
-    <meta name="twitter:image" content="https://monicagranbois.com/favicon.png"/>
-    <meta property="og:image" content="https://monicagranbois.com/favicon.png"/>
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-    {% feed_meta %}
-    {% if page.title %} 
-      <title>{{ page.title }}</title>
-    {% else %}
-      <title>{{ site.name }}</title>
-    {% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" /> <!-- Honour Terry Pratchett http://www.gnuterrypratchett.com/#HTML -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{site.twitter_username}}">
+  {% assign meta_title = "" %}
+  {% if page.title %} 
+    {% capture  meta_title %}{{ page.title }}{% endcapture %}
+    <meta property="og:type" content="article"/>
+    <meta property="og:article:author" content="{{ site.author }}"/>
+    <meta property="og:article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}"/>
+  {% else %}
+    {% capture meta_title %}{{ site.name }}{% endcapture %}
+    <meta property="og:type" content="website" />
+  {% endif %}
+  {% assign meta_description = "" %}
+  {% if page.desc %}
+    {% capture meta_description %}{{ page.desc }}{% endcapture %}
+  {% else %}
+    {% capture meta_description %}{{ site.description }}{% endcapture %}
+  {% endif %}
+  <meta name="twitter:title" content="{{ meta_title }}"/>
+  <meta property="og:title" content="{{ meta_title }}"/>
+  <meta name="twitter:description" content="{{ meta_description }}" />
+  <meta property="og:description" content="{{ meta_description }}"/>
+  <meta name="twitter:image" content="{{ site.url }}{{ site.og.twitter_image }}"/>
+  <meta property="og:image" content="{{ site.url }}{{ site.og.linkedin_image }}"/>
+  <meta property="og:image:alt" content="A keyboard and two computer monitors in a dark room. The monitors display blurred computer code. Photo by Fotis Fotopoulos on Unsplash"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+  <meta name="description" content="{{ meta_description }}" />
+  <meta name="author" content="{{ site.author }}"/>
+  {% feed_meta %}
+  <title>{{ meta_title }}</title>  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css" integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/blog.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+      <a class="navbar-brand" href="/">{{ site.navbar_brand }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    {% if page.desc %}
-      <meta name="description" content="{{ page.desc }}" />
-    {% else %}
-      <meta name="description" content="{{ site.description }}" />
-    {% endif %}
-
-      <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css" integrity="sha384-F1AY0h4TrtJ8OCUQYOzhcFzUTxSOxuaaJ4BeagvyQL8N9mE4hrXjdDsNx249NpEc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-        <a class="navbar-brand" href="/">{{ site.navbar_brand }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/about/">About</a>
-            <a class="nav-item nav-link" href="/projects/">Projects</a>
-            <a class="nav-item nav-link" href="/feed.xml">RSS</a>
-          </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+          <a class="nav-item nav-link" href="/projects/">Projects</a>
+          <a class="nav-item nav-link" href="/feed.xml">RSS</a>
         </div>
-      </nav>
+      </div>
+    </nav>
   </header>
 

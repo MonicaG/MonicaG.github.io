@@ -17,6 +17,9 @@ comments:
   label: blog comment
   theme: github-light
   issue-term: pathname
+og:
+  twitter_image: /favicon.png
+  linkedin_image: /images/og/linkedin.jpg
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
