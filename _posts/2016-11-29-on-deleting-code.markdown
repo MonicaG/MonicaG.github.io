@@ -16,7 +16,7 @@ I created the following unit test:
 
 <!--more-->
 
-```Python
+```python
 def test_dictionary(self):
     t = trie.Trie()
     count = 0
@@ -34,7 +34,7 @@ I assumed something must be wrong with my code.  So, I compared the words return
 
 Maybe my code was correct after all. I decided to look at the file to see if there were empty lines or duplicate entries.  Time to use some command line tools!  I used the following commands to get a count of the unique words in the file:
 
-```Shell
+```shell
 $ sort -f -b -u /usr/share/dict/words > file
 $ wc -l file
 $ 234371

@@ -27,7 +27,7 @@ I added the hubot integration by doing the following:
 
 I followed the instructions from the [hubot documentation](https://hubot.github.com/docs/) to create my hubot.  One thing to note: ensure you specify <code>slack</code> as the adapter when you go through the generator process OR provide slack as the adapter option on the command line.  Example:
 
-```Shell
+```shell
 yo hubot --adapter=slack
 ```
 
@@ -38,7 +38,7 @@ Specifying <code>slack</code> as the adapter will do the following:
 
 At the end of this process I had a basic hubot which I could run locally.  The command to run it is:
 
-```Shell
+```shell
 HUBOT_SLACK_TOKEN=XXXXXXX ./bin/hubot --adapter slack
 ```
 
@@ -62,7 +62,7 @@ I followed the [instructions](https://hubot.github.com/docs/deploying/heroku/) o
 
 At the command line, I set the variables using the following:
 
-```Shell
+```shell
 heroku config:add HUBOT_SLACK_TOKEN=xxxx
 heroku config:add HEROKU_URL=https://jupiter-marine-12345.herokuapp.com
 ```
@@ -71,13 +71,13 @@ NOTE: If you did NOT specify <code>slack</code> as the adapter when you created 
 
 After following the instructions, I git committed and pushed my bot to heroku which started it automatically.  I stopped it by running the following command:
 
-```Shell
+```shell
 heroku ps:scale web=0
 ```
 
 It can be started again by running the command:
 
-```Shell
+```shell
 heroku ps:scale web=1
 ```
 

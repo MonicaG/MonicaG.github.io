@@ -10,7 +10,7 @@ I recently created a script package ([hubot-lmgtfy](https://www.npmjs.com/packag
 
 ### Step 1: Install grunt (if not installed already)
 
-```Shell
+```shell
 npm install -g grunt-cli
 ```
 
@@ -55,14 +55,14 @@ The package.json changes should include something like the following:
 
 Once you have created your script, you will want to test your package locally.  To do so, you will need to make your package available using the [npm link](https://docs.npmjs.com/cli/link) command. In the root of your package do the following commands:
 
-```Shell
+```shell
 npm install
 npm link
 ```
 
 The npm link command should give you output like the following:
 
-```Shell
+```shell
 /Users/monica/.npm-global/lib/node_modules/hubot-your-script -> /Users/monica/development/hubot-your-script
 ```
 
@@ -70,7 +70,7 @@ This creates a symbolic link to your script package.
 
 Next, cd to your hubot installation and run the following command
 
-```Shell
+```shell
 npm link hubot-your-script
 ```
 
@@ -93,7 +93,7 @@ Add your package name to your hubot's external-scripts.js file
 
  and run hubot
 
-```Shell
+```shell
 bin/hubot
 ```
 
@@ -104,13 +104,13 @@ When you are done testing your package locally, unlink it.
 
 In your hubot directory do the following:
 
-```Shell
+```shell
 npm unlink hubot-your-script
 ```
 
 Next, cd to the root of your hubot's script package and do the following:
 
-```Shell
+```shell
 npm unlink
 ```
 

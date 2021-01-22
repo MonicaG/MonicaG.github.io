@@ -13,7 +13,7 @@ Some examples:
 
 **Jekyll**
 
-```Shell
+```shell
 jekyll serve --watch --drafts --host 0.0.0.0
 ```
 
@@ -21,7 +21,7 @@ On my mobile device I would enter the url of: http://10.0.1.22:4000
 
 **Flask**
 
-```Python
+```python
 from flask import Flask
 app = Flask(__name__)
 
