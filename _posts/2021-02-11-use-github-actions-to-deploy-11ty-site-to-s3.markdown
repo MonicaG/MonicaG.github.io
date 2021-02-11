@@ -1,5 +1,5 @@
 ---
-title: How To Use GitHub Actions To Deploy an 11ty Websiteite To S3
+title: How To Use GitHub Actions To Deploy an 11ty Website To S3
 layout: post
 category: webdev
 desc: A walkthrough describing how to setup a GitHub Actions workflow to deploy an 11ty website to AWS-S3.
