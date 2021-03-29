@@ -122,4 +122,4 @@ I delete the struct from the app code and imported the Swift Package again. This
 
 I am grateful that people post solutions online. I would never have found the `DEAD_CODE_STRIPPING = NO` workaround on my own.
 
-Thank you for reading! I hope you found it helpful!  If you have some time I would appreciate feedback on my app, [Barbell Helper](https://barbellhelper.com/), available on [TestFlight](https://testflight.apple.com/join/s0jqslOG). Thank you!
+Thank you for reading! I hope you found it helpful!  ~~If you have some time I would appreciate feedback on my app, [Barbell Helper](https://barbellhelper.com/), available on [TestFlight](https://testflight.apple.com/join/s0jqslOG). Thank you!~~  [Barbell Helper](https://barbellhelper.com/) is now available on the [App Store](https://apps.apple.com/us/app/barbell-helper/id1509605376?ls=1).
