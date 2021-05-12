@@ -35,7 +35,7 @@ sysdiagnose_YEAR.MONTH.DAY_HH-MM-SS-xxxx_Watch-OS_Watch_watchOSBuildNumber/syste
 
  This file can be opened in the Console app (located on your computer in Applications -> Utilities).  
 
-All info and debug messages will be shown automatically.  Usually, when using the Console app you would need to select these options under the Action menu. There were a lot of log messages displayed. These are from various systems on the Apple Watch. To filter the log messages so I could see just mine, I entered the [subsystem](https://developer.apple.com/documentation/os/logging/logging_a_message) my log messages used.
+All info and debug messages will be shown automatically.  Usually, when using the Console app you would need to select these options under the Action menu. There were a lot of log messages displayed. These are from various systems on the Apple Watch. To filter the log messages so I could see just mine, I entered the [subsystem](https://developer.apple.com/documentation/os/logger/3551621-init) my log messages used.
 
 The crash report is also located in the extracted archive at:
 
