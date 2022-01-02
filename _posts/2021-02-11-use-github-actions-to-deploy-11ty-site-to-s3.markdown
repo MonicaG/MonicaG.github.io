@@ -68,7 +68,7 @@ jobs:
 
       # Uncomment if your project uses dependencies
       # - name: Install dependencies
-      #   run: npm install
+      #   run: npm ci
 
       - name: Build the website
         run: npx @11ty/eleventy
