@@ -6,6 +6,7 @@ paginate: 10
 twitter_username: mgranbois
 github_username: MonicaG
 url: "http://monicagranbois.com"
+tipjar_url: https://ko-fi.com/W7W4CXVBZ
 permalink: /blog/:categories/:title/
 navbar_brand: Monica Granbois
 markdown: kramdown
