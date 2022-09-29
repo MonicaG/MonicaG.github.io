@@ -1,7 +1,9 @@
 ---
 title:  Rejection, Acceptance, And Crashes. My TestFlight Journey
 layout: post
-category: swift
+category: xcode
+redirect_from:
+  - /blog/swift/Rejection,-Acceptance,-And-Crashes.-My-TestFlight-Journey/
 desc: My story of submitting my app to FlightTest
 ---
 

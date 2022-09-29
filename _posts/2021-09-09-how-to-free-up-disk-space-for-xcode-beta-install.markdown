@@ -1,8 +1,10 @@
 ---
 title: How to free up disk space for XCode Beta install
 layout: post
-category: swift
+category: xcode
 desc: Extracting XCodeBeta.xip gives the error "not enough disk space available"
+redirect_from:
+  - /blog/swift/how-to-free-up-disk-space-for-xcode-beta-install/
 excerpt_separator: <!--more-->
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: Specify XCode version for GitHub workflows
 layout: post
-category: swift
+category: xcode
 desc: The build process on GitHub failed when I used the XCTUnwrap function. This feature was added in XCode 11. I updated the workflows yml file to specify the XCode version.
+redirect_from:
+  - /blog/swift/specify-xcode-version-for-github-workflows/
 excerpt_separator: <!--more-->
 ---
 

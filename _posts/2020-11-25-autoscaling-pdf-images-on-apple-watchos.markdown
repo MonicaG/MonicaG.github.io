@@ -1,8 +1,10 @@
 ---
 title: Autoscaling PDF Images On Apple watchOS
 layout: post
-category: swift
+category: xcode
 desc: How to add autoscaling PDF images for a watchOS project
+redirect_from:
+  - /blog/swift/autoscaling-pdf-images-on-apple-watchos/
 excerpt_separator: <!--more-->
 ---
 

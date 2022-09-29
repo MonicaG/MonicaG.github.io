@@ -1,7 +1,9 @@
 ---
 title: How I debugged a crashing watchOS app with crash reports and log files
 layout: post
-category: swift
+category: xcode
+redirect_from:
+  - /blog/swift/debugging-and-watchOS-crash-reports/
 desc: How I debugged my watchOS app using crash reports and log files.
 ---
 
