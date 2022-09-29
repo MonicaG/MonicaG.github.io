@@ -1,8 +1,10 @@
 ---
 title: Generating A New Apple Distribution Certificate 
 layout: post
-category: swift
+category: xcode
 desc: How to generate A New Apple Distribution Certificate 
+redirect_from:
+  - /blog/swift/generating-a-new-distribution-certificate/
 excerpt_separator: <!--more-->
 ---
 
