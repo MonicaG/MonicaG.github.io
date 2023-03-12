@@ -4,7 +4,7 @@
 	{% for post in site.posts %}
 		{% if post.title != page.title and post.categories[0] == page.categories[0] %}
 			{% if firstTime == true %}
-				<p class="text-center text-md-left font-weight-bold">Other {{ post.categories[0] | capitalize }} Posts</p>
+				<p class="text-left font-weight-bold">Other {{ post.categories[0] | capitalize }} Posts</p>
 			{% endif %}
 			{% assign firstTime = false %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
