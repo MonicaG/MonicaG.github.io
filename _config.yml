@@ -5,6 +5,7 @@ highlighter: rouge
 paginate: 10
 twitter_username: mgranbois
 github_username: MonicaG
+mastodon_username: "@mgranbois"
 url: "http://monicagranbois.com"
 tipjar_url: https://ko-fi.com/W7W4CXVBZ
 permalink: /blog/:categories/:title/
