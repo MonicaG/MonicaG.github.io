@@ -1,14 +1,15 @@
 <div class="related-posts">
-	{% assign firstTime = true %}
-	<ul>
-	{% for post in site.posts %}
-		{% if post.title != page.title and post.categories[0] == page.categories[0] %}
-			{% if firstTime == true %}
-				<p class="text-left font-weight-bold">Other {{ post.categories[0] | capitalize }} Posts</p>
-			{% endif %}
-			{% assign firstTime = false %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endif %}
-	{% endfor %}
-	</ul>
+	{% unless page.category == null %}
+		{% capture pageCategory %}{{ page.category }}{% endcapture %}
+		{% unless site.categories[pageCategory].size == 1 %}
+			<p class="font-weight-bold text-left mb-2">Other {{ pageCategory | capitalize }} Posts</p>
+			<ul>
+				{% for post in site.categories[pageCategory] %}
+					{% unless post.title == page.title  %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endunless %}
+				{% endfor %}
+			</ul>
+		{% endunless %}
+	{% endunless %}
 </div>
